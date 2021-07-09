@@ -18,20 +18,27 @@ Receiving packets and arranging them into web pages that visitors see is the job
 The usage of data packets guarantees that information is transferred reliably and efficiently. The utilization of data packets is critical since it allows networks to operate more quickly. Users would no longer have to worry about their communications becoming stuck in transit to their intended receivers.
 
 3.
-
-
-
+The amount of data transmitted through a network in a certain time period is referred to as the data rate. It refers to the rate at which data is moved from one device to another or between a computer and a peripheral device. Megabits per second (Mbps) or Megabytes per second (MBPS) are the most used units of measurement (MBps). For example, if the bandwidth is 100 Mbps but the data rate is 50 Mbps, the greatest amount of data that can be transferred is 100 Mb, but the channel is only transferring 50 Mb per second.
+Bandwidth is the maximum amount of data that can be transferred in a given amount of time. It refers to the network's or transmission medium's data carrying capability. It is the maximum quantity of data that can be transferred per second over a network in basic terms. Bits per second (bps), Megabits per second (Mbps), and Gigabits per second (GBPS) are the most used units of measurement (Gbps).
+Throughput is the overall effective transmission rate, which takes into account factors such as transmission overhead, protocol inefficiencies, and maybe competing traffic. It is usually measured at a network layer higher than the data rate.
 
 4.
-
-
-
+A datagram is a self-contained message with source and destination addresses given in the header. It is mostly used for wireless communication.
+The concept behind datagrams is quite simple. You simply add enough information in each packet to allow any switch to select how to transport it to its destination. Every packet, in other words, carries the whole destination address.
+Packet headers in the datagram-forwarding model of packet delivery contain a destination address. It is the responsibility of the intervening switches or routers to examine this address and route the message to the proper destination.
+This is performed in datagram forwarding by providing each switch with a forwarding database of (destination,next hop) pairs. When a packet arrives, the switch searches its forwarding table for the next hop information: the immediate-neighbor address – or interface – to which the packet should be transferred to move it one step closer to its final destination. A forwarding table's next hop value is a single entry; each switch is solely responsible for one step in the packet's journey. If all goes well, the network of switches will be able to send the packet to its final destination one hop at a time.
+The packet destination addresses do not have to perfectly match the “destination” entries in the forwarding table. For IP routing, however, the table's "destination" entries will correlate to IP address prefixes, resulting in significant space savings. The switch must be able to determine the next hop by performing a lookup operation using its forwarding table and the destination address in the receiving packet.
 
 5.
-
-
-
-
+Algorithms are, in essence, a set of instructions that are followed step by step to accomplish a goal or solve a problem. A cake recipe, for example, could be thought of as an algorithm for baking a cake.
+Algorithms in computing give computers with a step-by-step roadmap to complete tasks. They are made up of a detailed set of instructions that detail how to perform a task. They serve as the foundation for programming, allowing devices such as computers, smartphones, and websites to function and make decisions.
+Input and output are how computer algorithms work. They take the information as input and apply each step of the algorithm to it to produce an output.
+A search engine, for example, is an algorithm that accepts a search query as input and searches its database for items that match the words in the query. The findings are then output.
+Algorithms can be simply seen as flowcharts.
+The data generates a series of processes and queries that must be addressed in a specific order. The generated result is the outcome when each step of the flowchart is completed.
+Algorithms are employed in every aspect of computing and information technology. They can manipulate and analyze data in a variety of ways, as well as conduct calculations and actions.
+Automation software is an excellent illustration of algorithms in action. This is since automation completes tasks by according to a set of rules. An algorithm is created by these rules.
+Technology will only improve and evolve. Algorithms will always be at the heart of these technologies, dictating what they do and how they do it if coding and programming are used.
 
 6.
 
