@@ -4,8 +4,39 @@ When some input data is handled at any point throughout the execution of a progr
 When you press a key on a keyboard, the switches and the small CPU within turn the switch press into a key code, which is simply a pattern of binary bits that indicates whether you pushed the ‘a' key or the space bar. The keyboard then saves numerous entries in a tiny memory and sends a signal to the USB bus that data is available. The main CPU receives an interrupt signal from the USB hardware, informing it that something requires attention. In response, it runs a short software that determines what needs to be addressed. In this case it is to service new data on the USB bus. 
 Since it can tell which USB device wanted attention (the USB hardware has a physical register to store that data that the CPU can read), it has some context, and therefore knows which driver (a program which handles a specific device) it needs to run to process the data, in this case the keyboard driver. The keyboard driver links with the keyboard and retrieves the keypress data that has been queued. The keyboard driver is basically a piece of code that has been created to do one thing: receive data from a USB device with a specific USB identifier, do some conversions on it, and then inform another piece of code that keyboard input is available.
 
-
-
-
 2. 
+Data packets are a collection of information units that are combined into a single set for transmission over the Internet. To relay information, any data that needs to be conveyed from one system to another must first be broken down into smaller parts. These parts are reassembled to become readable once they reach the destination.
+Internet Protocol (IP)-based systems utilize packets of data to communicate with one another across the Internet. Depending on the protocol used for transmission, a data packet is referred to as a "block," "datagram," or "frame."
+Sending a photo image to a buddy using an app like IMessage is an example of the data packet procedure.
+Before being sent, the image is separated into small bits, which happens in the background, of course. After that, your friend just sees the reassembled image.
+Bandwidth, Network Congestion, Packet Loss, Jitters, and Web Browsers are all factors that affect data packet delivery.
+The size of the Internet pipeline available to a user is referred to as bandwidth. It determines how much data a user can send at a given moment. In the case of data packets, bandwidth refers to the maximum number of packets that a user may fit into his or her accessible pipeline. In other words, the larger the bandwidth, the more data packets can be accommodated and the more efficient the transmission.
+The slower the transmission becomes as the amount of data packets flowing through an Internet pipeline grows.
+When data is lost during transmission, it is referred to as a packet loss.
+Jitters are network data packet emissions that are erratic.
+Receiving packets and arranging them into web pages that visitors see is the job of a web browser. A browser should be able to process up to eight data packets at once. 
+The usage of data packets guarantees that information is transferred reliably and efficiently. The utilization of data packets is critical since it allows networks to operate more quickly. Users would no longer have to worry about their communications becoming stuck in transit to their intended receivers.
+
+3.
+
+
+
+
+4.
+
+
+
+
+5.
+
+
+
+
+
+6.
+
+
+
+
+
 
