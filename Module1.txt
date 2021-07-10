@@ -41,6 +41,9 @@ Automation software is an excellent illustration of algorithms in action. This i
 Technology will only improve and evolve. Algorithms will always be at the heart of these technologies, dictating what they do and how they do it if coding and programming are used.
 
 6.
+The topology of your network refers to how nodes, devices, and connections are physically or logically connected to one another. Consider your network to be a city, with the topology serving as the road map. There are numerous methods to arrange and manage a network, just as there are different ways to arrange and maintain a city—for example, ensuring that avenues and boulevards can enable movement between the busiest parts of town. Each has benefits and drawbacks, and depending on your company's needs, different arrangements can provide you with a higher level of connectivity and security.
+Physical and logical topologies are the two types of network topology. The physical links and interconnections between nodes and the network—the wires, cables, and so on—are referred to as physical network topology, as the name suggests. Logical network topology is more abstract and strategic, referring to the conceptual knowledge of how and why the network is set up the way it is, as well as how data flows across it.
+For a variety of reasons, the layout of your network is critical. Above all, it is critical to the operation and performance of your network. Choosing the correct topology for your company's operational model can improve performance while also making it easier to discover faults, rectify mistakes, and allocate resources more effectively across the network to ensure optimal network health. A streamlined and properly managed network topology can increase energy and data efficiency, which can in turn help to reduce operational and maintenance costs.
 
 
 
