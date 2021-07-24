@@ -1,0 +1,9 @@
+a.	Git is a version control system that allows you to manage and monitor the history of your source code. GitHub is a service that allows you to manage Git repositories in the cloud. If you have Git-based open-source projects, GitHub is designed to help you manage them better.
+
+b.	Using a terminal allows us to send simple text commands to our computer, such as navigating through a directory or copying a file, and it serves as the foundation for many more advanced automations and programming skills.
+
+c.	The most important advantage of adopting a version control system is that when a contributor clones a repository, they are effectively producing a backup of the current version of that repository. Multiple backups on various workstations are beneficial in preventing data loss in the event of a server failure.
+
+One of the most important advantages of version control systems, particularly DVCS, is that it allowed us to participate to projects we enjoyed even though we were in separate countries. I believe that the existence of DVCS was one of the most important factors in open-source technology's present success.
+
+Keeping track of the changes in a code file might assist you and new contributors understand how a certain section of the code was created. The developers can use version control to track down that specific feature and alter or remove it without compromising the project's operation.
