@@ -25,3 +25,13 @@ Size: This comparison is based on the amount of resources used by Docker or virt
 This comparison is conducted based on the amount of boot time used. In the case of virtual machines, startup time is longer because the guest server starts from scratch.
 Integration: The capacity to seamlessly integrate with other tools is the basis of this comparison.
 VM's DevOps tools, as well as its capability, are severely constrained. However, docker allows you to build up several instances, which makes it easier to use.
+
+4.
+When containers are employed, the docker function allows users to compress the size of the generated application and aids in producing a smaller trail of the operating system. Containers are a technology that allows employees to engage across the company's many sectors and borders. Different teams within a business can effortlessly correlate and collaborate using Docker.
+Docker comes with the ability to run on any platform. It's also possible to use it locally, deploy it, and test it on cloud platforms. Furthermore, the application can be executed and tested in a hybrid environment. Furthermore, with docker and container deployment, scalability is not an issue.
+Docker files are small and light, making them cost-effective and space-saving.
+You can use the saved capacity for other work-related tasks by taking up less space. It's best for modest to medium-sized deployments in work-related situations.
+Docker saves secrets in the swarm and picks which secrets to allow services access to, including a few key engine operations like secret inspect, secret create, and so on.
+Docker's software is superior. The use of containers for delivery is said to be more efficient. Containers are self-contained, portable, and have a separate disk volume. As the container matures and is deployed to other environments, this isolated volume travels with it.
+Software-defined networking is supported by Docker. The Docker CLI and Engine enable operators to define segregated networks for containers without touching a single router. Operators and developers create sophisticated network topologies and define them in configuration files. It also serves as a security benefit because the application's containers can run in an isolated virtual network with regulated ingress and egress paths.
+
