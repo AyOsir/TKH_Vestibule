@@ -16,3 +16,12 @@ The container-based Docker platform enables extremely portable workloads. Docker
 Because of Docker's mobility and lightweight nature, it's also simple to dynamically manage workloads, scaling up or down apps and services in near real time as business needs dictate.
 Docker is a lightweight and quick application. It offers a practical, cost-effective alternative to hypervisor-based virtual machines, allowing you to make better use of your computational resources. Docker is ideal for high-density situations as well as small and medium deployments where more can be accomplished with fewer resources.
 
+3.
+Docker, unlike virtual machines, does not cause version mismatches when used in multiple configurations. Unlike virtual computers, there is no loss of time and effort done by the developer in designing and executing the application.
+When comparing the functionality of a virtual machine with a Docker container, there are three factors to consider:
+Containerization and Docker containers are buzzwords among technologists all over the world.
+It has been highlighted as being equally helpful due to the quantity of characteristics it provides, which include:
+Size: This comparison is based on the amount of resources used by Docker or virtual machines when they are running. Dockers, on the other hand, consume less storage space, which can be repurposed to create more containers, whereas virtual machines cannot.
+This comparison is conducted based on the amount of boot time used. In the case of virtual machines, startup time is longer because the guest server starts from scratch.
+Integration: The capacity to seamlessly integrate with other tools is the basis of this comparison.
+VM's DevOps tools, as well as its capability, are severely constrained. However, docker allows you to build up several instances, which makes it easier to use.
