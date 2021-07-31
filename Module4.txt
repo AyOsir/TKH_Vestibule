@@ -1,1 +1,18 @@
+1.
+Obviously, a computer is nothing more than an automaton. And on a computer, everything is represented in binary.
+When some input data is handled at any point throughout the execution of a program, the context of the program decides what the data represents. It is basically a set of binary bits in terms of hardware (or even more fundamentally, a set of differing voltages). The context in which these fragments appear is what gives them meaning.
+When you press a key on a keyboard, the switches and the small CPU within turn the switch press into a key code, which is simply a pattern of binary bits that indicates whether you pushed the ‘a' key or the space bar. The keyboard then saves numerous entries in a tiny memory and sends a signal to the USB bus that data is available. The main CPU receives an interrupt signal from the USB hardware, informing it that something requires attention. In response, it runs a short software that determines what needs to be addressed. In this case it is to service new data on the USB bus. 
+Since it can tell which USB device wanted attention (the USB hardware has a physical register to store that data that the CPU can read), it has some context, and therefore knows which driver (a program which handles a specific device) it needs to run to process the data, in this case the keyboard driver. The keyboard driver links with the keyboard and retrieves the keypress data that has been queued. The keyboard driver is basically a piece of code that has been created to do one thing: receive data from a USB device with a specific USB identifier, do some conversions on it, and then inform another piece of code that keyboard input is available.
+
+2.
+Docker allows you to bundle and run an application in a container, which is a loosely isolated environment. Because of the isolation and security, you can operate multiple containers on the same host at the same time. Another term associated with Docker is containerization. The word "containerization" refers to the use of containers to deploy programs on a Linux platform. It first appeared in the tech sector in the year 2013, and it has remained a consistent source of information for modern technological advancements since then.
+Docker simplifies the development process by allowing developers to work in standardized settings while employing local containers to provide your apps and services. Continuous integration and continuous delivery workflows benefit greatly from containers.
+Consider the following circumstance as an example:
+Your developers write code locally and use Docker containers to share it with their coworkers.
+They use Docker to deploy their applications and run automated and manual tests in a test environment.
+Developers can repair defects in the development environment before deploying them to the test environment for testing and validation.
+When the testing is through, it's just a matter of releasing the revised image to the production environment to get the repair to the customer.
+The container-based Docker platform enables extremely portable workloads. Docker containers can run on a developer's laptop, in a data center on real or virtual computers, on cloud providers, or in a hybrid environment.
+Because of Docker's mobility and lightweight nature, it's also simple to dynamically manage workloads, scaling up or down apps and services in near real time as business needs dictate.
+Docker is a lightweight and quick application. It offers a practical, cost-effective alternative to hypervisor-based virtual machines, allowing you to make better use of your computational resources. Docker is ideal for high-density situations as well as small and medium deployments where more can be accomplished with fewer resources.
 
