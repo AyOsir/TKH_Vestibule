@@ -24,6 +24,15 @@ A function is a piece of code that is called from another piece of code and then
 After processing, a function can return a value. In-built functions are already programmed in libraries/modules and can be imported by a programmer. max (), min (), and other functions can compute the maximum and minimum value of an inventory supplied as a parameter, for example. When we need a feature that isn't built in, we can create our own function. For example, if we want to convert temperature from Fahrenheit to Celsius, we can construct our own custom function that takes an argument and returns a result. Below is an example of a function that transforms a given amount of hours to minutes: def hours to Minutes (hours): 60 hours of return time
 
 4.
+Python is an interpreter, cooperative, and object-oriented programming language with a print statement. Python, according to the assertion, combines "amazing strength with very plain syntax," which should pique the interest of people who teach programming. The print () command prints a message to the screen or to a standard output device. The message can be a string or another object that will be converted to a string before being shown.
+The print () function outputs the specified data to the standard yield gadget (screen) or the content stream record. That single piece of code has a print explanation that we use every day in our programming without even realizing its complexity. The print () articulation's purpose is to print the specified question to either the standard yield gadget or the content stream record.
+objects: This means the question to be printed, * demonstrates that there can be more than one object.
+sep: This means the division which would be between the diverse objects. By default, this esteem is ‘‘.
+end: The esteem for this parameter is printed at last.
+file: It ought to be a question with a write(str) strategy. In the event that this esteem isn't specified, it prints objects on the standard yield gadget, i.e., screen.
+flush: The stream gets coercively flushed on the off chance that this esteem is Genuine. By default, this esteem is False.
+
+
 
 
 Codes(Corrections).
