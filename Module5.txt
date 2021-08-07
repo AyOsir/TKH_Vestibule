@@ -1,0 +1,49 @@
+1.
+Python is an object-oriented, high-level programming language with dynamic semantics that is interpreted. Its high-level built-in data structures, paired with dynamic typing and dynamic binding, making it ideal for Rapid Application Development as well as as a scripting or glue language for connecting existing components. Python's concise, easy-to-learn syntax prioritizes readability, which lowers software maintenance costs. Modules and packages are supported by Python, which fosters program modularity and code reuse. The Python interpreter and its substantial standard library are free to download and distribute in source or binary form for all major platforms.
+Python is popular among programmers because of the enhanced productivity it offers. The edit-test-debug cycle is extraordinarily rapid because there is no compilation step. Python scripts are simple to debug: a bug or improper input will never result in a segmentation fault. Instead, when the interpreter finds a mistake, it throws an exception. The interpreter prints a stack trace if the application fails to catch the exception. Inspection of local and global variables, execution of arbitrary expressions, setting breakpoints, stepping through the code one line at a time, and so on are all possible with a source level debugger. The debugger is written in Python, demonstrating Python's introspective capabilities. On the other hand, adding a few print statements to the source code is frequently the quickest method to debug a program: the fast edit-test-debug cycle makes this simple approach quite successful.
+In 2021, Python is predicted to be one of the most widely used programming languages. Python is popular because it is easier to understand. Python may be used in a wide range of fields. Python is a dynamically typed language with a simple grammar. Python is an interpreted language, which means it evaluates code line by line, making it simple to spot problems. Python has more built-in functions, reducing the amount of code that needs to be written.
+
+2.
+Data types are an important notion in the Python programming language. In Python, each value has its own Python data type. The classification of information objects or the categorizing of data values into some type of data category are both examples of data types. It helps to understand the kind of operations that will be performed on a value.
+Python supports a variety of data types. Each value in Python has a datatype. Because everything in Python programming is an object, data types are essentially classes, and variables are instances (objects) of these classes. Python supports a number of standard data types, each with its own storage technique.
+A list of Python data types could look like this.
+It's necessary to keep in mind that data type is a crucial concept in programming.
+Variables can hold a wide range of information, and different types can perform different functions.
+Python comes pre-installed with the following data types in these categories:
+Set Types: frozenset, set (Sets are unordered.)
+Mapping Type: dict (The mapping objects are used to map hash table values to arbitrary objects.)
+Sequence Types: range, tuple, list
+Binary Types: memoryview, bytearray, bytes
+Boolean Type: bool
+Numeric Types: complex, float, int
+Text Type: str
+
+
+3.
+A function is a piece of code that is called from another piece of code and then executed. A function is a square of well-organized, reusable code that performs a single, connected task. Capacities provide greater application security and a high level of code reuse. When we need the same repeating steps in multiple portions of the program with various variable names, we employ it. We group the stages that repeat themselves into a function and call it as needed. The function will be able to process the data and return the result. The def keyword is used to define a function in Python, followed by the function name and a list of variable names/parameters enclosed in round parenthesis.
+After processing, a function can return a value. In-built functions are already programmed in libraries/modules and can be imported by a programmer. max (), min (), and other functions can compute the maximum and minimum value of an inventory supplied as a parameter, for example. When we need a feature that isn't built in, we can create our own function. For example, if we want to convert temperature from Fahrenheit to Celsius, we can construct our own custom function that takes an argument and returns a result. Below is an example of a function that transforms a given amount of hours to minutes: def hours to Minutes (hours): 60 hours of return time
+
+4.
+
+
+Codes(Corrections).
+
+""" use \' for print the ' in the string"""
+single_string = 'It\'s a single quote string'
+"""print string"""
+print(single_string)
+----------------------------------------------
+n1 = 5
+n2 = 7.5
+print(n1 + n2)
+
+nstr1 = "abc"
+print(nstr1 + str(n1))
+---------------------------------------------
+tup1 = ['Tom', 78]
+tup1[1] = 90
+print(tup1)
+
+Output:
+--------
+['Tom', 90]
