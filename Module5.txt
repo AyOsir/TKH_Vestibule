@@ -77,45 +77,43 @@ myString = 'New York Knicks'
 print(type(myString))
 <class 'str'>
 
-n = 10
+n = 12
 print(type(n))
 <class 'int'>
 
-n_float = 7.5
+n_float = 6.5
 print(type(n_float))
 <class 'float'>
-In [11]:
-single_string = 'Its a single quote string'
-print(single_string)
+
+
+single_string = 'It\'s a single quote string'
+print(single_string) 
   File "<ipython-input-11-dbe7c6e4d27f>", line 1
     single_string = 'It's a single quote string'
-                        ^
-SyntaxError: invalid syntax
-In [13]:
+                                        
+
 double_string = "It's a double quote string"
 print(double_string)
 It's a double quote string
-In [14]:
-n1 = 5
-n2 = 7.5
-print(n1+n2)
-12.5
-In [18]:
-nstr1 = "abc"
-print(nstr1 + n1)
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-18-1d5cacb6336b> in <module>
-      1 nstr1 = "abc"
-----> 2 print(nstr1 + n1)
 
-TypeError: can only concatenate str (not "int") to str
-In [19]:
+
+n1 = 6
+n2 = 6.5
+print(n1 + n2)
+
+nstr1 = "abc"
+print(nstr1 + str(n1))
+
+
 nstr2 = "def"
 print(nstr1 + nstr2)
 abcdef
-In [23]:
+
+
+
 n1, n2 = 10, 11
+
+
 In [24]:
 n1
 Out[24]:
@@ -128,40 +126,46 @@ In [27]:
 result = 3 + 4.0 / 2 * 5  # DMAS
 print(result)
 13.0
-In [28]:
+
+
 # module operator %
 remainder = 17%10
 print(remainder)
 7
-In [29]:
+
 # x ^ n
 x = 5
 n = 4
 print(x ** n)
 625
-In [31]:
+
+
 nstr = "abc"
 ans = nstr * 10
-In [32]:
+
+
 print(len(ans))
 30
-In [39]:
-name = "Harshit"
+
+
+name = "Gregory"
 print("%s is a data scientist!" %name)
-Harshit is a data scientist!
+Gregory is a data scientist!
+
 In [40]:
 name.upper()
 Out[40]:
-'HARSHIT'
+'GREGORY'
 In [41]:
 name.lower()
 Out[41]:
-'harshit'
+'gregory'
+
 In [42]:
-nstr = "it is a nice day today."
+nstr = "Monday is a important day."
 nstr.capitalize()
 Out[42]:
-'It is a nice day today.'
+'Monday is a important day.'
 In [44]:
 name.index('s')
 Out[44]:
@@ -179,18 +183,18 @@ alist = [3,4,5]
 print(alist)
 [3, 4, 5]
 In [48]:
-alist = ['harshit', 2, 5.5]
+alist = ['gregory', 2, 5.5]
 print(alist)
-['harshit', 2, 5.5]
+['gregory', 2, 5.5]
 In [49]:
 alist.append(10)
 alist.append(15)
 print(alist)
-['harshit', 2, 5.5, 10, 15]
+['gregory', 2, 5.5, 10, 15]
 In [50]:
 alist.pop()
 print(alist)
-['harshit', 2, 5.5, 10]
+['gregory', 2, 5.5, 10]
 In [53]:
 alist[3]
 Out[53]:
@@ -202,12 +206,16 @@ Out[54]:
 In [55]:
 alist.append([1,2,3])
 print(alist)
-['harshit', 2, 5.5, 10, [1, 2, 3]]
+['gregory', 2, 5.5, 10, [1, 2, 3]]
 In [56]:
 alist*2
 Out[56]:
-['harshit', 2, 5.5, 10, [1, 2, 3], 'harshit', 2, 5.5, 10, [1, 2, 3]]
+['gregory', 2, 5.5, 10, [1, 2, 3], 'gregory', 2, 5.5, 10, [1, 2, 3]]
 In [57]:
 alist + alist
 Out[57]:
-['harshit', 2, 5.5, 10, [1, 2, 3], 'harshit', 2, 5.5, 10, [1, 2, 3]]
+['gregory', 2, 5.5, 10, [1, 2, 3], 'gregory', 2, 5.5, 10, [1, 2, 3]]
+
+
+PART 2 CODE
+
