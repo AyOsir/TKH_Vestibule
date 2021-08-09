@@ -35,20 +35,8 @@ flush: The stream gets coercively flushed on the off chance that this esteem is 
 
 
 
-Codes(Corrections).
+Codes.
 
-""" use \' for print the ' in the string"""
-single_string = 'It\'s a single quote string'
-"""print string"""
-print(single_string)
-----------------------------------------------
-n1 = 5
-n2 = 7.5
-print(n1 + n2)
-
-nstr1 = "abc"
-print(nstr1 + str(n1))
----------------------------------------------
 tup1 = ['Tom', 78]
 tup1[1] = 90
 print(tup1)
