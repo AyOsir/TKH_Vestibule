@@ -219,3 +219,286 @@ Out[57]:
 
 PART 2 CODE
 
+In [1]:
+alist = ['Greg', 53, 'Carina', 6]
+In [2]:
+alist
+Out[2]:
+['Greg', 53, 'Carina', 6]
+In [3]:
+alist.append(help)
+In [4]:
+alist
+Out[4]:
+['Greg',
+ 53,
+ 'Carina',
+ 6,
+ Type help() for interactive help, or help(object) for help about object.]
+In [5]:
+help()
+
+In [6]:
+blists = [
+    ['Greg', 53],
+    ['Carina', 6]
+]
+In [7]:
+blists
+Out[7]:
+[['Greg', 53], ['Carina', 6]]
+In [12]:
+blists[-1]
+Out[12]:
+['Carina', 6]
+In [13]:
+blists[-2][0]
+Out[13]:
+'Greg'
+In [14]:
+blists.append(['Mak', 90])
+blists
+Out[14]:
+[['Tom', 54], ['Julia', 78], ['Mak', 90]]
+In [15]:
+a = [0]*5
+a
+Out[15]:
+[0, 0, 0, 0, 0]
+In [16]:
+a = [[0]*cols]*rows
+In [18]:
+cols = 5
+rows = 4
+dlist = [[1]*cols]*rows
+In [19]:
+dlist
+Out[19]:
+[[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]]
+In [23]:
+# tuples
+tup1 = ('Tom', 78)
+tup1[1] = 90
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-23-c004c9ac7b5a> in <module>
+      1 # tuples
+      2 tup1 = ('Tom', 78)
+----> 3 tup1[1] = 90
+
+TypeError: 'tuple' object does not support item assignment
+In [24]:
+tup2 = ('Julia', 89)
+tup1 + tup2
+Out[24]:
+('Tom', 78, 'Julia', 89)
+In [25]:
+tup1
+Out[25]:
+('Tom', 78)
+In [26]:
+tup3 = tup1 + tup2
+In [27]:
+tup3
+Out[27]:
+('Tom', 78, 'Julia', 89)
+In [28]:
+len(tup3)
+Out[28]:
+4
+In [29]:
+# dictionary
+country_code = {'India': 1, 'USA': 2, 'China': 3}
+print(country_code)
+{'India': 1, 'USA': 2, 'China': 3}
+In [30]:
+print(country_code['China'])
+3
+In [31]:
+country_code['UAE'] = 4
+print(country_code)
+{'India': 1, 'USA': 2, 'China': 3, 'UAE': 4}
+In [33]:
+'Inda' in country_code
+Out[33]:
+False
+In [34]:
+x = True
+type(x)
+Out[34]:
+bool
+In [35]:
+1 == 2
+Out[35]:
+False
+In [36]:
+1 != 2
+Out[36]:
+True
+In [38]:
+a = 1
+b = 2
+print(a == b)
+print(a > b)
+print(a < b)
+print(a != b)
+False
+False
+True
+True
+In [39]:
+color = 'red'
+if color == 'red':
+    print("Color is red!")
+    
+print("Color problem is solved!!")
+Color is red!
+Color problem is solved!!
+In [42]:
+color = 'kjh'
+if color == 'red':
+    print("Color is red!")
+    
+else:
+    print("color is not red!")
+    
+print("Color problem is solved!!")
+color is not red!
+Color problem is solved!!
+In [43]:
+color = 'green'
+if color == 'red':
+    print("Color is red!")
+    
+elif color == 'green':
+    print("Color is green!")
+    
+else:
+    print("color is not red!")
+    
+print("Color problem is solved!!")
+Color is green!
+Color problem is solved!!
+In [44]:
+age = 15
+if age >= 18:
+    print("Adult")
+    
+else:
+    print("Juvenile")
+Juvenile
+In [45]:
+a = 0
+not(a)
+Out[45]:
+True
+In [46]:
+a = 3
+not(a)
+Out[46]:
+False
+In [47]:
+a = True
+not(a)
+Out[47]:
+False
+In [49]:
+score = 76
+percentile = 83
+
+if score > 75 or percentile > 90:
+    print("Admission successful!")
+else:
+    print("Try again next year")
+Try again next year
+In [51]:
+range(5)
+Out[51]:
+range(0, 5)
+In [52]:
+for i in range(5):
+    print(i)
+0
+1
+2
+3
+4
+In [54]:
+for i in range(1, 10, 2):
+    product = 8 * i
+    print(product)
+8
+24
+40
+56
+72
+In [55]:
+names = ('harshit', 'shubham', 'sahil')
+for name in names:
+    print(name.upper())
+HARSHIT
+SHUBHAM
+SAHIL
+In [56]:
+age = [12,43,45,10]
+i = 0
+while i < len(age):
+    if age[i] >= 18:
+        print("Adult")
+    else:
+        print("Juvenile")
+    i += 1
+Juvenile
+Adult
+Adult
+Juvenile
+In [57]:
+# list comprehension
+
+cubes = [n** 3 for n in range(1,10)]
+print(cubes)
+[1, 8, 27, 64, 125, 216, 343, 512, 729]
+In [58]:
+cubes = []
+for i in range(1,10):
+    cubes.append(i ** 3)
+print(cubes)
+[1, 8, 27, 64, 125, 216, 343, 512, 729]
+In [62]:
+help(abs)
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+
+In [64]:
+abs(2-5)
+Out[64]:
+3
+In [65]:
+def add_two_numbers(a, b):
+    sum = a + b
+    return sum
+In [66]:
+add_two_numbers(5,11)
+Out[66]:
+16
+In [67]:
+def fahr_to_celsius(temp):
+    """
+    This function converts temperature from fahrenheit
+      to celsius.
+      Args:
+      -----
+        tempInFahr: temperature in fahrenheit
+
+      Returns:
+      --------
+        tempInCel: temperature in celsius
+    """
+    tempInCel = (temp - 32) * 5/9
+    return tempInCel
+In [68]:
+fahr_to_celsius(50)
+Out[68]:
+10.0
