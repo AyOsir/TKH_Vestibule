@@ -35,15 +35,7 @@ flush: The stream gets coercively flushed on the off chance that this esteem is 
 
 
 
-Codes.
 
-tup1 = ['Tom', 78]
-tup1[1] = 90
-print(tup1)
-
-Output:
---------
-['Tom', 90]
 
 PART 1 CODE
 print("New York Knicks!")
