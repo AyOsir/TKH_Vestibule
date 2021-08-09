@@ -244,10 +244,10 @@ blists[-2][0]
 Out[13]:
 'Greg'
 In [14]:
-blists.append(['Mak', 90])
+blists.append(['Melo', 80])
 blists
 Out[14]:
-[['Tom', 54], ['Julia', 78], ['Mak', 90]]
+[['Greg', 53], ['Carina', 6], ['Melo', 80]]
 In [15]:
 a = [0]*5
 a
@@ -265,31 +265,28 @@ Out[19]:
 [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]]
 In [23]:
 # tuples
-tup1 = ('Tom', 78)
-tup1[1] = 90
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-23-c004c9ac7b5a> in <module>
-      1 # tuples
-      2 tup1 = ('Tom', 78)
-----> 3 tup1[1] = 90
+tup1 = ['Greg', 6]
+tup1[1] = 80
+print(tup1)
 
-TypeError: 'tuple' object does not support item assignment
-In [24]:
-tup2 = ('Julia', 89)
+Output:
+--------
+['Greg', 80]
+
+tup2 = ('Carina', 79)
 tup1 + tup2
 Out[24]:
-('Tom', 78, 'Julia', 89)
+('Greg', 6, 'Carina', 79)
 In [25]:
 tup1
 Out[25]:
-('Tom', 78)
+('Greg', 6)
 In [26]:
 tup3 = tup1 + tup2
 In [27]:
 tup3
 Out[27]:
-('Tom', 78, 'Julia', 89)
+('Greg', 6, 'Carina', 79)
 In [28]:
 len(tup3)
 Out[28]:
@@ -335,34 +332,34 @@ False
 True
 True
 In [39]:
-color = 'red'
-if color == 'red':
-    print("Color is red!")
+color = 'blue'
+if color == 'blue':
+    print("Color is blue!")
     
 print("Color problem is solved!!")
-Color is red!
+Color is blue!
 Color problem is solved!!
 In [42]:
 color = 'kjh'
-if color == 'red':
-    print("Color is red!")
+if color == 'blue':
+    print("Color is blue!")
     
 else:
-    print("color is not red!")
+    print("color is not blue!")
     
 print("Color problem is solved!!")
-color is not red!
+color is not blue!
 Color problem is solved!!
 In [43]:
 color = 'green'
 if color == 'red':
-    print("Color is red!")
+    print("Color is blue!")
     
 elif color == 'green':
     print("Color is green!")
     
 else:
-    print("color is not red!")
+    print("color is not blue!")
     
 print("Color problem is solved!!")
 Color is green!
@@ -421,14 +418,13 @@ for i in range(1, 10, 2):
 56
 72
 In [55]:
-names = ('harshit', 'shubham', 'sahil')
-for name in names:
+names = ('gregory', 'carina', 'carmelo')
     print(name.upper())
-HARSHIT
-SHUBHAM
-SAHIL
+GREGORY
+CARINA
+CARMELO
 In [56]:
-age = [12,43,45,10]
+age = [19,17,5,21]
 i = 0
 while i < len(age):
     if age[i] >= 18:
@@ -436,10 +432,10 @@ while i < len(age):
     else:
         print("Juvenile")
     i += 1
-Juvenile
-Adult
 Adult
 Juvenile
+Juvenile
+Adult
 In [57]:
 # list comprehension
 
@@ -490,3 +486,443 @@ In [68]:
 fahr_to_celsius(50)
 Out[68]:
 10.0
+
+
+
+PART 3 CODE:
+
+In [1]:
+a = 5
+In [2]:
+print(type(a))
+<class 'int'>
+In [3]:
+alist = [1,2,'a']
+print(type(alist))
+<class 'list'>
+In [4]:
+heights = [5,4,6,7,3,5]
+heights.sort()
+print(heights)
+[3, 4, 5, 5, 6, 7]
+In [5]:
+alist.reverse()
+print(alist)
+['a', 2, 1]
+In [6]:
+astring = 'newjersey nets!'
+bstring = astring.replace('brooklyn', 'nets!')
+In [7]:
+print(bstring)
+brooklyn nets!
+In [8]:
+dir(alist)
+Out[8]:
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__delitem__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__gt__',
+ '__hash__',
+ '__iadd__',
+ '__imul__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__reversed__',
+ '__rmul__',
+ '__setattr__',
+ '__setitem__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'append',
+ 'clear',
+ 'copy',
+ 'count',
+ 'extend',
+ 'index',
+ 'insert',
+ 'pop',
+ 'remove',
+ 'reverse',
+ 'sort']
+In [9]:
+class Rectangle:
+    
+    def __init__(self, height, width):
+        self.height = height
+        self.width = width
+    
+    def area(self):
+        area = self.height * self.width
+        return area
+In [10]:
+rect1 = Rectangle(13, 10)
+In [11]:
+print(type(rect1))
+<class '__main__.Rectangle'>
+In [12]:
+rect1.height
+Out[12]:
+13
+In [13]:
+rect1.width
+Out[13]:
+10
+In [14]:
+rect1.area()
+Out[14]:
+130
+In [15]:
+dir(rect1)
+Out[15]:
+['__class__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+ 'area',
+ 'height',
+ 'width']
+In [16]:
+import math
+In [17]:
+print(type(math))
+<class 'module'>
+In [18]:
+dir(math)
+Out[18]:
+['__doc__',
+ '__file__',
+ '__loader__',
+ '__name__',
+ '__package__',
+ '__spec__',
+ 'acos',
+ 'acosh',
+ 'asin',
+ 'asinh',
+ 'atan',
+ 'atan2',
+ 'atanh',
+ 'ceil',
+ 'copysign',
+ 'cos',
+ 'cosh',
+ 'degrees',
+ 'e',
+ 'erf',
+ 'erfc',
+ 'exp',
+ 'expm1',
+ 'fabs',
+ 'factorial',
+ 'floor',
+ 'fmod',
+ 'frexp',
+ 'fsum',
+ 'gamma',
+ 'gcd',
+ 'hypot',
+ 'inf',
+ 'isclose',
+ 'isfinite',
+ 'isinf',
+ 'isnan',
+ 'ldexp',
+ 'lgamma',
+ 'log',
+ 'log10',
+ 'log1p',
+ 'log2',
+ 'modf',
+ 'nan',
+ 'pi',
+ 'pow',
+ 'radians',
+ 'remainder',
+ 'sin',
+ 'sinh',
+ 'sqrt',
+ 'tan',
+ 'tanh',
+ 'tau',
+ 'trunc']
+In [19]:
+help(math)
+Help on module math:
+
+NAME
+    math
+
+MODULE REFERENCE
+    https://docs.python.org/3.7/library/math
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    This module provides access to the mathematical functions
+    defined by the C standard.
+
+FUNCTIONS
+    acos(x, /)
+        Return the arc cosine (measured in radians) of x.
+    
+    acosh(x, /)
+        Return the inverse hyperbolic cosine of x.
+    
+    asin(x, /)
+        Return the arc sine (measured in radians) of x.
+    
+    asinh(x, /)
+        Return the inverse hyperbolic sine of x.
+    
+    atan(x, /)
+        Return the arc tangent (measured in radians) of x.
+    
+    atan2(y, x, /)
+        Return the arc tangent (measured in radians) of y/x.
+        
+        Unlike atan(y/x), the signs of both x and y are considered.
+    
+    atanh(x, /)
+        Return the inverse hyperbolic tangent of x.
+    
+    ceil(x, /)
+        Return the ceiling of x as an Integral.
+        
+        This is the smallest integer >= x.
+    
+    copysign(x, y, /)
+        Return a float with the magnitude (absolute value) of x but the sign of y.
+        
+        On platforms that support signed zeros, copysign(1.0, -0.0)
+        returns -1.0.
+    
+    cos(x, /)
+        Return the cosine of x (measured in radians).
+    
+    cosh(x, /)
+        Return the hyperbolic cosine of x.
+    
+    degrees(x, /)
+        Convert angle x from radians to degrees.
+    
+    erf(x, /)
+        Error function at x.
+    
+    erfc(x, /)
+        Complementary error function at x.
+    
+    exp(x, /)
+        Return e raised to the power of x.
+    
+    expm1(x, /)
+        Return exp(x)-1.
+        
+        This function avoids the loss of precision involved in the direct evaluation of exp(x)-1 for small x.
+    
+    fabs(x, /)
+        Return the absolute value of the float x.
+    
+    factorial(x, /)
+        Find x!.
+        
+        Raise a ValueError if x is negative or non-integral.
+    
+    floor(x, /)
+        Return the floor of x as an Integral.
+        
+        This is the largest integer <= x.
+    
+    fmod(x, y, /)
+        Return fmod(x, y), according to platform C.
+        
+        x % y may differ.
+    
+    frexp(x, /)
+        Return the mantissa and exponent of x, as pair (m, e).
+        
+        m is a float and e is an int, such that x = m * 2.**e.
+        If x is 0, m and e are both 0.  Else 0.5 <= abs(m) < 1.0.
+    
+    fsum(seq, /)
+        Return an accurate floating point sum of values in the iterable seq.
+        
+        Assumes IEEE-754 floating point arithmetic.
+    
+    gamma(x, /)
+        Gamma function at x.
+    
+    gcd(x, y, /)
+        greatest common divisor of x and y
+    
+    hypot(x, y, /)
+        Return the Euclidean distance, sqrt(x*x + y*y).
+    
+    isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0)
+        Determine whether two floating point numbers are close in value.
+        
+          rel_tol
+            maximum difference for being considered "close", relative to the
+            magnitude of the input values
+          abs_tol
+            maximum difference for being considered "close", regardless of the
+            magnitude of the input values
+        
+        Return True if a is close in value to b, and False otherwise.
+        
+        For the values to be considered close, the difference between them
+        must be smaller than at least one of the tolerances.
+        
+        -inf, inf and NaN behave similarly to the IEEE 754 Standard.  That
+        is, NaN is not close to anything, even itself.  inf and -inf are
+        only close to themselves.
+    
+    isfinite(x, /)
+        Return True if x is neither an infinity nor a NaN, and False otherwise.
+    
+    isinf(x, /)
+        Return True if x is a positive or negative infinity, and False otherwise.
+    
+    isnan(x, /)
+        Return True if x is a NaN (not a number), and False otherwise.
+    
+    ldexp(x, i, /)
+        Return x * (2**i).
+        
+        This is essentially the inverse of frexp().
+    
+    lgamma(x, /)
+        Natural logarithm of absolute value of Gamma function at x.
+    
+    log(...)
+        log(x, [base=math.e])
+        Return the logarithm of x to the given base.
+        
+        If the base not specified, returns the natural logarithm (base e) of x.
+    
+    log10(x, /)
+        Return the base 10 logarithm of x.
+    
+    log1p(x, /)
+        Return the natural logarithm of 1+x (base e).
+        
+        The result is computed in a way which is accurate for x near zero.
+    
+    log2(x, /)
+        Return the base 2 logarithm of x.
+    
+    modf(x, /)
+        Return the fractional and integer parts of x.
+        
+        Both results carry the sign of x and are floats.
+    
+    pow(x, y, /)
+        Return x**y (x to the power of y).
+    
+    radians(x, /)
+        Convert angle x from degrees to radians.
+    
+    remainder(x, y, /)
+        Difference between x and the closest integer multiple of y.
+        
+        Return x - n*y where n*y is the closest integer multiple of y.
+        In the case where x is exactly halfway between two multiples of
+        y, the nearest even value of n is used. The result is always exact.
+    
+    sin(x, /)
+        Return the sine of x (measured in radians).
+    
+    sinh(x, /)
+        Return the hyperbolic sine of x.
+    
+    sqrt(x, /)
+        Return the square root of x.
+    
+    tan(x, /)
+        Return the tangent of x (measured in radians).
+    
+    tanh(x, /)
+        Return the hyperbolic tangent of x.
+    
+    trunc(x, /)
+        Truncates the Real x to the nearest Integral toward 0.
+        
+        Uses the __trunc__ magic method.
+
+DATA
+    e = 2.718281828459045
+    inf = inf
+    nan = nan
+    pi = 3.141592653589793
+    tau = 6.283185307179586
+
+FILE
+    /Users/harshit/anaconda3/lib/python3.7/lib-dynload/math.cpython-37m-darwin.so
+
+
+In [20]:
+math.log(1000,10)
+Out[20]:
+3.0
+In [21]:
+math.pi
+Out[21]:
+3.141592653589793
+In [22]:
+import math as mt
+
+mt.log(1000,10)
+Out[22]:
+3.0
+In [27]:
+from math import log, pi
+from numpy import asarray
+
+log(1000,10)
+Out[27]:
+3.0
